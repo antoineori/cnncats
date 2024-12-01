@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  inference-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./serialized_model.pt:/app/serialized_model.pt
+    environment:
+      - MODEL_PATH=/app/serialized_model.pt
