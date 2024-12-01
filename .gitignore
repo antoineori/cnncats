@@ -5,7 +5,7 @@ venv/
 models/*.pt
 
 # Ignore test pictures
-test_pics/*.jpeg
+#test_pics/*.jpeg
 
 # Ignore Python cache files
 __pycache__/
